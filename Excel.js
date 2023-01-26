@@ -1,10 +1,7 @@
 // const XLSX = require('xlsx')
-const orderData = require('../models/Users')
-const WooCommerce = require('../models/WooCommerce');
-const Shopify = require('../models/Shopify')
+
 const Excel = require('exceljs')
-const Amazon = require('../models/Amazon')
-const Flipkart = require('../models/Flipkart')
+
 const path = require("path");
 
 
@@ -14,12 +11,7 @@ let worksheet2 = workbook.addWorksheet('Shopify')
 let worksheet3 = workbook.addWorksheet('Amazon')
 
 const folderPath = path.join(__dirname, "../../static/orders-excel")
-// console.log("THIS########",folderPath)
-// console.log("THIS########")
-// console.log("THIS########")
-// console.log("THIS########")
-// console.log("THIS########")
-// console.log("THIS########")
+
 
 worksheet1.columns = [
   { header: 'Order ID', key: 'orderid' },
