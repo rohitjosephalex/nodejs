@@ -1,5 +1,6 @@
 // const XLSX = require('xlsx')
-
+//writing data to an excel sheet about various store data
+//Note some of the constants and page details are removed from the code
 const Excel = require('exceljs')
 
 const path = require("path");
